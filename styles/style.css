@@ -8,6 +8,16 @@ html {
   block-size: 100%;
 }
 
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+} 
+
 .page {
   width: 1920px;
   inline-size: 1200px;
@@ -123,4 +133,52 @@ ol {
 
 .content__video-card-description-container {
   flex-grow: 1;
+}
+
+.search-form__fieldset-title { 
+  margin-bottom: 5px;
+  text-align: left;
+  vertical-align: text-top;
+  font-weight: normal;
+  line-height: auto;
+  font-size: 18px;
+}
+
+.title {
+  text-transform: uppercase;
+  text-align: left;
+  vertical-align: text-top;
+  font-size: 75px;
+  font-family: Oswald;
+  font-weight: bold;
+  line-height: 94%;
+}
+
+.content__accent {
+  opacity: 0.5;
+}
+
+.content__card-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.content__video-card-title {
+  text-transform: uppercase;
+  font-size: 31px;
+  letter-spacing: 0%;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden; 
+  text-overflow: ellipsis;
+}
+
+.content__video-card-description {
+  font-size: 18px;
+  letter-spacing: 0%;
+  font-weight: 400;
+  display: block;
+  overflow: hidden;
+  line-height: 1;
+  line-clamp: 3;
 }
